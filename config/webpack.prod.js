@@ -12,7 +12,7 @@ const prodConfig = {
   mode: "production",
   output: {
     filename: "[name].[contenthash].js",
-    publicPath: "https://demo-icecream.netlify.app/",
+    publicPath: "http://icecream-microfrontend.apps.ocp4.pacosta.com/",
   },
   resolve: {
     extensions: [".tsx", ".ts", ".jsx", ".js", ".json"],
@@ -26,7 +26,7 @@ const prodConfig = {
       },
       remotes: {
         container:
-          "container@https://demo-con.netlify.app/remoteEntry.js",
+          "container@http://container-microfrontend.apps.ocp4.pacosta.com/remoteEntry.js",
       },
       shared: {
         ...deps,
